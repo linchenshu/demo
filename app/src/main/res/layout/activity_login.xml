@@ -45,9 +45,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        >
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginBottom="61dp">
         <LinearLayout
             android:layout_width="80dp"
             android:layout_height="48dp"
@@ -81,7 +82,7 @@
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="180dp"
-        >
+        android:id="@+id/linearLayout">
         <LinearLayout
             android:layout_width="80dp"
             android:layout_height="48dp"
@@ -92,7 +93,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="用户名："
+                android:text="密码："
                 android:textSize="16sp"
                 android:textColor="#000000"
                 />
@@ -101,7 +102,7 @@
             android:id="@+id/et_password"
             android:layout_width="200dp"
             android:layout_height="48dp"
-            android:hint=""
+            android:hint="密码不能为空！！"
             android:textCursorDrawable="@null"
             android:inputType="number"
             android:layout_marginLeft="5dp"
